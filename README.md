@@ -1,4 +1,4 @@
-Copyright 2023 - The LineageOS Project
+Copyright 2026 - The LineageOS Project
 
 Device configuration for Samsung Galaxy Note 20 5G (SM-N981B).
 ========================================
