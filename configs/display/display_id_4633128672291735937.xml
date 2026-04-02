@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <displayConfiguration>
     <densityMapping>
-        <!-- Note 20 5G - FHD+ (resolução nativa) -->
+        <!-- Galaxy Note 20 5G (c1s) - Resolução nativa FHD+ -->
         <density>
             <height>1080</height>
             <width>2400</width>
-            <density>400</density>        <!-- Alterado: mais próximo do real (~393-420) -->
-        </density>
-
-        <!-- Mantido para compatibilidade (S20 QHD+) -->
-        <density>
-            <height>1440</height>
-            <width>3200</width>
-            <density>640</density>
+            <density>400</density>
         </density>
     </densityMapping>
 </displayConfiguration>
