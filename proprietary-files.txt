@@ -5,21 +5,22 @@ vendor/etc/dolby/dax-default.xml
 vendor/lib/soundfx/libswdap.so
 
 # Audio (Firmware)
-vendor/firmware/APBargeIn_AUDIO_SLSI.bin
 vendor/firmware/APBiBF_AUDIO_SLSI.bin
-vendor/firmware/APDV_AUDIO_SLSI.bin
-vendor/firmware/APTV_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin
+vendor/firmware/APDV_AUDIO_SLSI.bin
+vendor/firmware/APBargeIn_AUDIO_SLSI.bin
+vendor/firmware/APTV_AUDIO_SLSI.bin
+vendor/firmware/APSV_AUDIO_SLSI.bin
 vendor/firmware/SoundBoosterParam.bin
 
 # Bluetooth
-vendor/firmware/bcm4375B1_murata.hcd
-vendor/firmware/bcm4375B1_semco.hcd
-vendor/firmware/bcm4375B1_semco_sem.hcd
-vendor/firmware/bcmdhd_clm.blob
-vendor/firmware/bcmdhd_mfg.bin_b1
-vendor/firmware/bcmdhd_mon.bin_b1
 vendor/firmware/bcmdhd_sta.bin_b1
+vendor/firmware/bcmdhd_mon.bin_b1
+vendor/firmware/bcm4375B1_murata.hcd
+vendor/firmware/bcm4375B1_semco_sem.hcd
+vendor/firmware/bcmdhd_mfg.bin_b1
+vendor/firmware/bcm4375B1_semco.hcd
+vendor/firmware/bcmdhd_clm.blob
 
 # Camera
 vendor/lib64/hw/camera.exynos990.so
@@ -27,6 +28,54 @@ vendor/lib64/libexynoscamera3.so
 vendor/lib64/libexynoscamera_bayergdc_plugin.so
 vendor/lib64/libexynoscamera_fakemultiframe.so
 vendor/lib64/libexynoscamera_vpl_plugin.so
+
+# Camera Dependencies (Facial Recognition)
+vendor/lib/libmpbase.so
+vendor/lib64/libmpbase.so
+
+# Samsung UniHAL Stack
+vendor/lib/unihal_android.so
+vendor/lib64/unihal_android.so
+vendor/lib/unihal_cutils.so
+vendor/lib64/unihal_cutils.so
+vendor/lib/unihal_entry.so
+vendor/lib64/unihal_entry.so
+vendor/lib/unihal_filter_unit.so
+vendor/lib64/unihal_filter_unit.so
+vendor/lib/unihal_main.so
+vendor/lib64/unihal_main.so
+vendor/lib/unihal_scenario.so
+vendor/lib64/unihal_scenario.so
+vendor/lib/unihal_uniplugin@1.0.so
+vendor/lib64/unihal_uniplugin@1.0.so
+
+# Camera (Firmware)
+vendor/firmware/dual_cal_wide_swide.bin
+vendor/firmware/dual_cal_wide_tele.bin
+
+# Camera Beauty Dependencies
+vendor/lib/libHprFace_GAE_api.camera.samsung.so
+vendor/lib64/libHprFace_GAE_api.camera.samsung.so
+vendor/lib/libbeautyshot.arcsoft.so
+vendor/lib64/libbeautyshot.arcsoft.so
+
+# Camera High-Performance Recognition (Hpr)
+vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
+vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
+
+# UniHAL Image Processing Functions
+vendor/lib/libimgproc_sw.unifunc.so
+vendor/lib64/libimgproc_sw.unifunc.so
+
+# Camera Vision Dependencies
+vendor/lib/libOpenCv.camera.samsung.so
+vendor/lib64/libOpenCv.camera.samsung.so
+
+# Camera Provider Legacy
+vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so
+
+# Camera HIDL Implementation
+vendor/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so
 
 # Camera (Firmware)
 vendor/firmware/dual_cal_wide_swide.bin
@@ -66,9 +115,14 @@ vendor/bin/hw/gpsd
 vendor/lib64/libwrappergps.so
 
 # NFC
-vendor/etc/nfc/sec_s3nsen4_hwreg.bin
-vendor/etc/nfc/sec_s3nsen4_swreg.bin
-vendor/firmware/nfc/sec_s3nsen4_firmware.bin
+vendor/bin/hw/nxp.android.hardware.nfc@1.2-service
+vendor/firmware/nfc/libsn100u_fw.so
+vendor/etc/vintf/manifest/nxp.android.hardware.nfc@1.2-service.xml
+vendor/etc/init/nxp.android.hardware.nfc@1.2-service.rc
+vendor/etc/libnfc-nxp.conf
+vendor/etc/nfc/libnfc-nxp_RF.conf
+vendor/lib64/nfc_nci_nxpsn.so
+vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
 
 # RIL
 vendor/etc/floating_feature.xml
@@ -102,15 +156,8 @@ vendor/tee/driver/00000000-0000-0000-0000-53626f786476
 
 # Wi-Fi
 vendor/etc/wifi/indoorchannel.info
-vendor/firmware/nvram.txt_1rh_es11_b0
-vendor/firmware/nvram.txt_1rh_es12_b0
-vendor/firmware/nvram.txt_1rh_es13_b0
-vendor/firmware/nvram.txt_1rh_es32_b0
-vendor/firmware/nvram.txt_1rh_es41_b1
-vendor/firmware/nvram.txt_1rh_es42_b1
-vendor/firmware/nvram.txt_1rh_es43_b1
 vendor/firmware/nvram.txt_CS01_semco_b1
-vendor/firmware/nvram.txt_ES00_semco_b0
-vendor/firmware/nvram.txt_ES01_semco_b0
-vendor/firmware/nvram.txt_ES02_semco_b0
-vendor/firmware/nvram.txt_ES03_semco_b0
+vendor/firmware/nvram.txt_1rh_es43_b1
+
+# HWC
+vendor/lib64/hw/hwcomposer.exynos990.so
