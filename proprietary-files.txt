@@ -73,9 +73,11 @@ vendor/lib64/libOpenCv.camera.samsung.so
 
 # Camera Provider Legacy
 vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so
+vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so
 
 # Camera HIDL Implementation
 vendor/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so
+vendor/lib64/vendor.samsung.hardware.camera.device@5.0.so
 
 # Camera (Firmware)
 vendor/firmware/dual_cal_wide_swide.bin
@@ -161,3 +163,4 @@ vendor/firmware/nvram.txt_1rh_es43_b1
 
 # HWC
 vendor/lib64/hw/hwcomposer.exynos990.so
+vendor/lib64/libExynosHWCService.so
