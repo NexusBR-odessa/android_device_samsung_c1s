@@ -3,7 +3,7 @@ bluetooth.device.default_name=Galaxy Note 20
 
 # Fingerprint
 ro.vendor.fingerprint.type=udfps
-ro.vendor.fingerprint.sensor_location=540|1650|150
+ro.vendor.fingerprint.sensor_location=540|1950|130
 
 # WiFi
 wifi.direct.interface=p2p-dev-wlan0
