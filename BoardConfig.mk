@@ -23,6 +23,15 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_CUSTOM_BT_CONFIG := $(DEVICE_PATH)/bluetooth/libbt_vndcfg.txt
 
+# Graphics / HWC Configuration
+TARGET_USES_HWC2 := false
+TARGET_USES_HWC3 := true
+TARGET_USES_EXYNOS_DATASPACE_FEATURE := true
+BOARD_USES_EXYNOS_HWC3 := true
+# This is critical for Exynos graphics modules
+SOONG_CONFIG_exynos_graphics_USES_HWC3_SERVICE := true
+SOONG_CONFIG_exynos_hwc_target_soc_base := exynos9830
+
 # Display
 TARGET_SCREEN_DENSITY := 400
 
@@ -51,3 +60,5 @@ WPA_SUPPLICANT_VERSION                        := VER_0_8_X
 
 # inherit from the proprietary version
 -include vendor/samsung/c1s/BoardConfigVendor.mk
+
+

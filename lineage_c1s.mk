@@ -26,11 +26,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Evolution X specific flags
-WITH_GMS := true
-TARGET_USES_MINI_GAPPS := true
-TARGET_HAS_UDFPS := true
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := c1s
 PRODUCT_NAME := lineage_c1s
