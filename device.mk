@@ -34,19 +34,8 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 3200
 TARGET_SCREEN_WIDTH := 1440
 
-## Camera
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/camera/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    $(LOCAL_PATH)/configs/camera/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
-    $(LOCAL_PATH)/configs/camera/camera-feature.xml:$(TARGET_COPY_OUT_SYSTEM)/cameradata/camera-feature.xml \
-    $(LOCAL_PATH)/firmware/setfile_3j1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_3j1.bin
-
-$(call soong_config_set,samsungCameraVars,extra_ids,52) # ID=52 is telephoto00
-
-# Display / Graphics
-PRODUCT_PACKAGES += \
-    android.hardware.composer.hwc3-service.slsi \
-    libexynosdisplay
+# Camera
+$(call soong_config_set,samsungCameraVars,extra_ids,52) # ID=52 is telephoto
 
 # Density mapping config
 PRODUCT_COPY_FILES += \
@@ -81,22 +70,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
-PRODUCT_PACKAGES += \
-    libion \
-    libacryl \
-    libexynosscaler \
-    libhwjpeg \
-    android.hardware.composer.hwc3-service.slsi
-
-PRODUCT_PACKAGES += \
-    libExynosVideoApi \
-    libstagefrighthw \
-    android.hardware.media.omx@1.0-service
-
-PRODUCT_PACKAGES += \
-    gralloc.universal990 \
-    libgiantmscl
-
 $(call soong_config_set_bool,wpa_supplicant_8,board_wlan_bcmdhd_sae,true)
 
 # Inherit from Hubble
@@ -104,6 +77,3 @@ $(call inherit-product, device/samsung/universal9830-common/device-hubble.mk)
 
 # Inherit from the proprietary version
 $(call inherit-product-if-exists, vendor/samsung/c1s/c1s-vendor.mk)
-
-# Adding framework_compatibility_mattrix.xml ported from c2s
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/samsung/c1s/framework_compatibility_matrix.xml
