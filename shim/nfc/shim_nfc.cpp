@@ -17,7 +17,7 @@ std::string Trim(const std::string& s) {
     return s.substr(start, end - start + 1);
 }
 
-// GetProperty (versão simplificada)
+// GetProperty (Simplified version)
 std::string GetProperty(const std::string& key, const std::string& def) {
     char value[PROP_VALUE_MAX];
     if (__system_property_get(key.c_str(), value) > 0) {
@@ -26,7 +26,7 @@ std::string GetProperty(const std::string& key, const std::string& def) {
     return def;
 }
 
-// WriteStringToFile (fake simples)
+// WriteStringToFile (simple fake)
 bool WriteStringToFile(const std::string& content,
                        const std::string& path,
                        bool) {
@@ -42,10 +42,10 @@ bool WriteStringToFile(const std::string& content,
 namespace hardware {
 namespace details {
 
-// logAlwaysFatal (evita crash)
+// logAlwaysFatal (Avoid crash)
 void logAlwaysFatal(const char* msg) {
     __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, "FATAL: %s", msg);
-    abort(); // ou comenta se quiser evitar crash
+   // abort();
 }
 
 } // namespace details
