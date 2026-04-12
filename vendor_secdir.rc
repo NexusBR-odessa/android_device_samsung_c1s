@@ -1,0 +1,8 @@
+on early-init
+    # Define o grupo vendor_secdir
+    mkdir /data/vendor 0770 system vendor
+    chown system vendor /data/vendor
+
+    mkdir /data/vendor/postprocess 0770 camera vendor_secdir
+    mkdir /data/vendor/postprocess/eraw 0770 camera vendor_secdir
+    mkdir /data/vendor/postprocess/native 0770 camera vendor_secdir

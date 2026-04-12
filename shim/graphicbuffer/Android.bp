@@ -1,0 +1,11 @@
+soong_namespace {
+}
+
+cc_library_shared {
+    name: "libshim_graphicbuffer",
+    srcs: ["GraphicBufferMapper_shim.cpp"],
+    vendor: true,
+    relative_install_path: "lib64",
+    shared_libs: ["liblog"],
+    cflags: ["-Wno-error", "-fvisibility=default"],
+}
