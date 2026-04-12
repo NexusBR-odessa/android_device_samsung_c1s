@@ -29,56 +29,6 @@ vendor/lib64/libexynoscamera_bayergdc_plugin.so
 vendor/lib64/libexynoscamera_fakemultiframe.so
 vendor/lib64/libexynoscamera_vpl_plugin.so
 
-# Camera Dependencies (Facial Recognition)
-vendor/lib/libmpbase.so
-vendor/lib64/libmpbase.so
-
-# Samsung UniHAL Stack
-vendor/lib/unihal_android.so
-vendor/lib64/unihal_android.so
-vendor/lib/unihal_cutils.so
-vendor/lib64/unihal_cutils.so
-vendor/lib/unihal_entry.so
-vendor/lib64/unihal_entry.so
-vendor/lib/unihal_filter_unit.so
-vendor/lib64/unihal_filter_unit.so
-vendor/lib/unihal_main.so
-vendor/lib64/unihal_main.so
-vendor/lib/unihal_scenario.so
-vendor/lib64/unihal_scenario.so
-vendor/lib/unihal_uniplugin@1.0.so
-vendor/lib64/unihal_uniplugin@1.0.so
-
-# Camera (Firmware)
-vendor/firmware/dual_cal_wide_swide.bin
-vendor/firmware/dual_cal_wide_tele.bin
-
-# Camera Beauty Dependencies
-vendor/lib/libHprFace_GAE_api.camera.samsung.so
-vendor/lib64/libHprFace_GAE_api.camera.samsung.so
-vendor/lib/libbeautyshot.arcsoft.so
-vendor/lib64/libbeautyshot.arcsoft.so
-
-# Camera High-Performance Recognition (Hpr)
-vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
-vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
-
-# UniHAL Image Processing Functions
-vendor/lib/libimgproc_sw.unifunc.so
-vendor/lib64/libimgproc_sw.unifunc.so
-
-# Camera Vision Dependencies
-vendor/lib/libOpenCv.camera.samsung.so
-vendor/lib64/libOpenCv.camera.samsung.so
-
-# Camera Provider Legacy
-vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so
-vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so
-
-# Camera HIDL Implementation
-vendor/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so
-vendor/lib64/vendor.samsung.hardware.camera.device@5.0.so
-
 # Camera (Firmware)
 vendor/firmware/dual_cal_wide_swide.bin
 vendor/firmware/dual_cal_wide_tele.bin
