@@ -23,12 +23,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 $(call inherit-product, device/samsung/c1s/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Voltage stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := c1s
-PRODUCT_NAME := voltage_c1s
+PRODUCT_NAME := lineage_c1s
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N981B
 PRODUCT_MANUFACTURER := samsung

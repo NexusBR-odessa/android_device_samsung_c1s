@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_c1s.mk
+    $(LOCAL_DIR)/lineage_c1s.mk
