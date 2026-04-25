@@ -33,17 +33,6 @@ PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N981B
 PRODUCT_MANUFACTURER := samsung
 
-
-# Enable GMS with mini package
-WITH_GMS := true
-TARGET_USES_MINI_GAPPS := true
-
-# Enable UI enhancements
-TARGET_ENABLE_BLUR := true
-
-# Enable features
-TARGET_SUPPORTS_QUICK_TAP := true
-
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 # Use the latest approved GMS identifiers
